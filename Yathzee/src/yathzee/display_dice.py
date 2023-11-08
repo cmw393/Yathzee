@@ -8,6 +8,11 @@ def display_dice(values: List[int], held_indices: List[int] = []):
             print(f"{value}", end=" ")
     print()
 
+def score_card(player_name, score_card):
+    print(f"Score Card for {player_name}:")
+    for category, score in score_card.items():
+        print(f"{category}: {score} points")
+
 
 def display_dice(values: List[int], held_indices: List[int] = []):
     # Define ASCII art for die faces

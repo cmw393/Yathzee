@@ -24,3 +24,7 @@ class YahtzeeDice(Dice):
 
     def get_values(self):
         return [die.current_value for die in self.dice_set]
+    def get_values(self):
+        # Return a list containing the current values of all dice in the set
+        values = [die.current_value for die in self.dice_set]
+        return values
