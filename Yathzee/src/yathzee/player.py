@@ -37,5 +37,9 @@ class Player(Scoring):
 
         def release_dice(self, dice_indices):
             for index in dice_indices:
-                self.held_dice.remove(index)
+                self.held_dice.remove(index)    
+        def is_turn_over(self):
+        # Check if the player's turn is over based on the number of rolls remaining
+            return self.rolls_remaining == 0
+        
 
